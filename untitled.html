@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kach ❤️ Kiya</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050817;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(#7dd3fc 1px, transparent 1px);
+    background-size: 55px 55px, 95px 95px;
+    background-position: 0 0, 30px 40px;
+    opacity: 0.4;
+    animation: sky 15s linear infinite;
+}
+
+@keyframes sky {
+    from { transform: translateY(0); }
+    to { transform: translateY(-50px); }
+}
+
+main {
+    position: relative;
+    padding: 70px 20px 40px;
+}
+
+.heart {
+    font-size: 55px;
+    animation: beat 1.3s infinite;
+    margin-bottom: 25px;
+}
+
+@keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+h1 {
+    font-size: 39px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+h1 span {
+    color: #f9a8d4;
+}
+
+.subtitle {
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 400px;
+    margin: 0 auto 30px;
+}
+
+button {
+    background: linear-gradient(135deg, #f472b6, #818cf8);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#message {
+    display: none;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 22px;
+    border: 1px solid #818cf8;
+    border-radius: 18px;
+    background: #11152c;
+    line-height: 1.9;
+}
+
+h2 {
+    color: #f9a8d4;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    margin: 35px auto;
+    max-width: 500px;
+}
+
+.photo {
+    width: 100%;
+    height: 230px;
+    margin: 12px 0;
+    border: 1px dashed #818cf8;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #11152c;
+    color: #cbd5e1;
+    padding: 15px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+footer {
+    position: relative;
+    padding: 35px 15px;
+    color: #cbd5e1;
+    line-height: 2;
+}
+
+footer span {
+    color: #f9a8d4;
+}
+
+@media (max-width: 400px) {
+    h1 { font-size: 32px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<main>
+    <div class="heart">❤️</div>
+
+    <h1>
+        Kach <span>♡</span> Kiya
+    </h1>
+<div class="love-counter">
+  <h2>❤️ Our Love Story ❤️</h2>
+  <p>Every second with you is special, Kiya 🌙</p>
+  <div id="love-time">Loading...</div>
+  <p>Since May 20, 2020 💕</p>
+</div>
+
+<style>
+.love-counter {
+  margin: 25px auto;
+  padding: 20px;
+  max-width: 450px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid #ff80ab;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+.love-counter h2 {
+  color: #ff80ab;
+}
+#love-time {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.8;
+  color: #ffb6d5;
+  margin: 15px 0;
+}
+</style>
+
+<script>
+function updateLoveCounter() {
+  const start = new Date(2020, 4, 20, 0, 0, 0);
+  const now = new Date();
+  let seconds = Math.floor((now - start) / 1000);
+
+  const years = Math.floor(seconds / 31536000);
+  seconds %= 31536000;
+  const days = Math.floor(seconds / 86400);
+  seconds %= 86400;
+  const hours = Math.floor(seconds / 3600);
+  seconds %= 3600;
+  const minutes = Math.floor(seconds / 60);
+  seconds %= 60;
+
+  document.getElementById("love-time").textContent =
+    years + " years ❤️ " +
+    days + " days 💕 " +
+    hours + " hours ⏳ " +
+    minutes + " minutes " +
+    seconds + " seconds";
+}
+
+updateLoveCounter();
+setInterval(updateLoveCounter, 1000);
+</script>
+    <p class="subtitle">
+        Two hearts, one beautiful story.<br>
+        Under the same sky, you are my favorite person.
+    </p>
+
+    <button onclick="showLove()">
+        Open My Heart 💌
+    </button>
+
+    <div id="message">
+        <h2>My Dearest Kiya ❤️</h2>
+
+        Kiya, you have a special place in my heart.
+        Every memory we make is a page in our story.
+        No matter what tomorrow brings, I hope we keep
+        choosing each other, supporting each other,
+        and building beautiful memories together.
+
+        <br><br>
+
+        Forever writing our story... 🌙❤️
+    </div>
+
+    <<div class="gallery">
+    <h2>Our Little Universe 🌌</h2>
+
+    <div class="photo">
+        <img src="photo1.jpg" alt="Kach and Kiya">
+    </div>
+
+    <div class="photo">
+        <img src="photo2.jpg" alt="Our favorite memory">
+    </div>
+</div><!-- Ethiopian Love Music ❤️🇪🇹 -->
+<div class="music-box">
+  <h2>🎵 Our Love Song 🇪🇹</h2>
+  <p>A song for you, Kiya ❤️</p>
+
+  <audio id="loveMusic" controls loop>
+    <source src="love-song.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+</div>
+
+<style>
+.music-box {
+  position: relative;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #ff80ab;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+
+.music-box h2 {
+  color: #ff80ab;
+}
+
+.music-box audio {
+  width: 100%;
+  max-width: 320px;
+  margin-top: 10px;
+}
+</style><div class="secret-letter">
+  <button onclick="openLetter()">
+    💌 Open Your Secret Letter, Kiya
+  </button>
+
+  <div id="secretMessage">
+    <h2>To My Beautiful Kiya ❤️</h2>
+
+    <p>
+      My dearest Kiya,
+    </p>
+
+    <p>
+      Since May 20, 2020, you have been part of my story.
+      You hold a special place in my heart, and the memories
+      we have made mean so much to me.
+    </p><p>
+  Kiya, I know you have done so much for our love.
+  You have supported me, stood beside me, and loved me
+  even when things were not easy for us.
+</p>
+
+<p>
+  I know I have made mistakes, and sometimes I haven't
+  treated your love the way it deserved to be treated.
+  I cannot change the past, but I want to take
+  responsibility for my mistakes and become a better
+  partner to you.
+</p>
+
+<p>
+  Thank you for loving me and believing in us.
+  I don't want you to be the only one fighting for our
+  relationship. I want to learn how to love you better,
+  support you, and show you how much you mean to me
+  through my actions.
+</p>
+
+<p>
+  I love you very, very much, Kiya.
+  You are precious to me, and I want us to keep growing
+  together, creating beautiful memories, and building
+  a future filled with love, honesty, and understanding.
+</p>
+
+    <p>
+      Even when life becomes difficult, I want us to keep
+      understanding each other, supporting each other,
+      and choosing each other with love and patience.
+    </p>
+
+    <p>
+      I dream of building a beautiful future with you,
+      sharing happiness, facing challenges together,
+      and creating many more memories.
+    </p>
+
+    <p>
+      You are an important part of my life, Kiya.
+      Whatever tomorrow brings, I hope we continue
+      growing together and making our story beautiful.
+    </p>
+
+    <h3>Forever writing our story 🌙❤️</h3>
+    <h2>Yours, Kach 💕</h2>
+  </div>
+</div>
+
+<style>
+.secret-letter {
+  position: relative;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 450px;
+  color: white;
+  text-align: center;
+}
+
+.secret-letter button {
+  background: linear-gradient(135deg, #ff477e, #9b59b6);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 22px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#secretMessage {
+  display: none;
+  margin-top: 20px;
+  padding: 22px;
+  background: rgba(255, 128, 171, 0.10);
+  border: 1px solid #ff80ab;
+  border-radius: 20px;
+  line-height: 1.9;
+  animation: letterOpen 1s ease;
+}
+
+#secretMessage h2,
+#secretMessage h3 {
+  color: #ff9ac2;
+}
+
+@keyframes letterOpen {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
+<script>
+function openLetter() {
+  const letter = document.getElementById("secretMessage");
+
+  if (letter.style.display === "block") {
+    letter.style.display = "none";
+  } else {
+    letter.style.display = "block";
+  }
+}
+</script><script>
+function showLove() {
+  var message = document.getElementById("message");
+
+  if (message.style.display === "block") {
+    message.style.display = "none";
+  } else {
+    message.style.display = "block";
+  }
+}
+</script>
